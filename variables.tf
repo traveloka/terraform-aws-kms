@@ -10,12 +10,12 @@ variable "deletion_window_in_days" {
 }
 
 variable "description" {
-  description = "The description of this DynamoDB table"
+  description = "The description of this KMS key"
   type        = "string"
 }
 
 variable "environment" {
-  description = "The environment this DynamoDB table belongs to"
+  description = "The environment this KMS key belongs to"
   type        = "string"
 }
 
