@@ -8,14 +8,15 @@ data "aws_iam_policy_document" "cmk_key_policy" {
   statement {
     sid = "1"
 
+    effect = "Allow"
+
     principals = {
       type = "AWS"
-      identifiers = ["${data.aws_caller_identity.current.arn}"]
+      identifiers = ["${data.aws_caller_identity.current.account_id}"]
     }
 
     actions = [
-      "kms:Decrypt",
-      "kms:Encrypt"
+      "kms:*"
     ]
 
     resources = [
