@@ -13,8 +13,14 @@ data "aws_iam_policy_document" "cmk_key_policy" {
       identifiers = ["${data.aws_caller_identity.current.arn}"]
     }
 
-    actions = ["kms:*"]
-    resources = ["*"]
+    actions = [
+      "kms:Decrypt",
+      "kms:Encrypt"
+    ]
+
+    resources = [
+      "${module.cmk_key.key_arn}"
+    ]
   }
 }
 
