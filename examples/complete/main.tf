@@ -19,7 +19,7 @@ data "aws_iam_policy_document" "cmk_key_policy" {
     ]
 
     resources = [
-      "${module.cmk_key.key_arn}"
+      "*"
     ]
   }
 }
