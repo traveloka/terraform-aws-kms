@@ -28,7 +28,7 @@ data "aws_iam_policy_document" "cmk_key_policy" {
 }
 
 module "cmk_key" {
-  source                  = "../../"
+  source  = "../../"
 
   product_domain          = "bei"
   alias_name              = "testing"
