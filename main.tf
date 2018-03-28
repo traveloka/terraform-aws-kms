@@ -9,7 +9,7 @@ resource "aws_kms_key" "key" {
   tags {
     Description   = "${var.description}"
     Environment   = "${var.environment}"
-    AliasName     = "${var.alias_name}"
+    Name          = "${var.alias_name}"
     ProductDomain = "${var.product_domain}"
   }
 }
