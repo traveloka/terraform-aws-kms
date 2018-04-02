@@ -11,6 +11,7 @@ resource "aws_kms_key" "key" {
     Environment   = "${var.environment}"
     Name          = "${var.alias_name}"
     ProductDomain = "${var.product_domain}"
+    ManagedBy     = "Terraform"
   }
 }
 
