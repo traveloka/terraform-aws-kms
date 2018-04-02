@@ -15,7 +15,6 @@ module "cmk_key" {
   alias_name              = "secret-parameter"
   environment             = "production"
   description             = "Key to encrypt and decrypt secret parameters"
-  deletion_window_in_days = 7
   key_policy              = "${data.aws_iam_policy_document.cmk_key_policy.json}"
 }
 ```
