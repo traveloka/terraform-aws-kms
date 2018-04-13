@@ -8,8 +8,7 @@ Usage
 
 ```hcl
 module "cmk_key" {
-  source  = "github.com/traveloka/terraform-aws-kms-cmk"
-  version = "0.1.0"
+  source  = "github.com/traveloka/terraform-aws-kms-cmk?ref=v0.1.0"
 
   product_domain          = "bei"
   alias_name              = "secret-parameter"

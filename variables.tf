@@ -22,6 +22,7 @@ variable "environment" {
 variable "key_policy" {
   description = "The policy of the key usage"
   type        = "string"
+  default     = ""
 }
 
 variable "product_domain" {
