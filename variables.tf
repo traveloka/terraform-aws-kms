@@ -29,3 +29,9 @@ variable "product_domain" {
   description = "The name of the product domain"
   type        = "string"
 }
+
+variable "additional_tags" {
+  type        = "map"
+  description = "Additional tags to be added to kms-cmk"
+  default     = {}
+}
