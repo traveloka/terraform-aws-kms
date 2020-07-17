@@ -6,7 +6,7 @@ resource "aws_kms_key" "key" {
   is_enabled              = true
   enable_key_rotation     = true
 
-  tags "${merge(var.additional_tags, map(
+  tags = "${merge(var.additional_tags, map(
     "Description"   , "${var.description}",
     "Environment"   , "${var.environment}",
     "Name"          , "${var.alias_name}",
