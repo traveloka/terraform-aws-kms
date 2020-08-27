@@ -11,3 +11,4 @@ module "cmk_key" {
   description             = "Key to encrypt and decrypt secret parameters"
   deletion_window_in_days = 7
 }
+
