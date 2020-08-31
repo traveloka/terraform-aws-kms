@@ -1,33 +1,33 @@
 variable "alias_name" {
   description = "The name of the key alias"
-  type        = "string"
+  type        = string
 }
 
 variable "deletion_window_in_days" {
   description = "The duration in days after which the key is deleted after destruction of the resource"
-  type        = "string"
+  type        = string
   default     = 30
 }
 
 variable "description" {
   description = "The description of this KMS key"
-  type        = "string"
+  type        = string
 }
 
 variable "environment" {
   description = "The environment this KMS key belongs to"
-  type        = "string"
+  type        = string
 }
 
 variable "key_policy" {
   description = "The policy of the key usage"
-  type        = "string"
+  type        = string
   default     = ""
 }
 
 variable "product_domain" {
   description = "The name of the product domain"
-  type        = "string"
+  type        = string
 }
 
 variable "additional_tags" {
