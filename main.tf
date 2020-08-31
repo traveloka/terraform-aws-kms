@@ -16,6 +16,7 @@ resource "aws_kms_key" "key" {
     },
     var.additional_tags,
   )
+
 }
 
 resource "aws_kms_alias" "key_alias" {
