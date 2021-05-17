@@ -69,8 +69,8 @@ No requirements.
 
 ## Contributing
 
-This module accepting or open for any contributions from anyone, please see the [CONTRIBUTING.md](https://github.com/traveloka/terraform-aws-private-route53-zone/blob/master/CONTRIBUTING.md) for more detail about how to contribute to this module.
+This module accepting or open for any contributions from anyone, please see the [CONTRIBUTING.md](https://github.com/traveloka/terraform-aws-kms/blob/master/CONTRIBUTING.md) for more detail about how to contribute to this module.
 
 ## License
 
-This module is under Apache License 2.0 - see the [LICENSE](https://github.com/traveloka/terraform-aws-private-route53-zone/blob/master/LICENSE) file for details.
+This module is under Apache License 2.0 - see the [LICENSE](https://github.com/traveloka/terraform-aws-kms/blob/master/LICENSE) file for details.
